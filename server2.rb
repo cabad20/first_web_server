@@ -1,6 +1,6 @@
 require 'sinatra'
 get '/' do
-  "Hello World"
+  File.read(File.join('public', 'world.txt'))
 end
 
 get '/sinatra' do
@@ -8,5 +8,5 @@ get '/sinatra' do
 end
 
 get '/error' do
-  
+
 end
